@@ -1,0 +1,42 @@
+@import '../../styles/base';
+
+.container {
+  display: flex;
+  color: $white-smoke;
+}
+
+.item {
+  flex: 1 0 auto;
+  text-align: center;
+  color: $black;
+  font-size: 30px;
+  font-weight: $font-weight-bold;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white-smoke;
+  }
+
+  &:first-child {
+    border-right: 1px solid $silver;
+  }
+
+  &:last-child {
+    border-left: 1px solid $silver;
+  }
+}
+
+.activeItem {
+  background-color: $silver;
+
+  &:hover {
+    cursor: default;
+    background-color: $silver;
+  }
+}
+
+.search {
+  padding: 10px;
+  display: flex;
+}

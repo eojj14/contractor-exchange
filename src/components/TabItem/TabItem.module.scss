@@ -1,0 +1,15 @@
+@import '../../styles/base';
+
+.container {
+  display: flex;
+}
+
+.title {
+  flex: 1;
+  text-align-last: center;
+}
+
+.icon {
+  color: $black;
+  font-weight: $font-weight-bold;
+}

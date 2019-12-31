@@ -1,0 +1,47 @@
+@import '../../styles/base';
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+}
+
+.results {
+  flex: 3;
+  border: 1px solid $black;
+  @extend %rounded-border;
+}
+
+.filters {
+  flex: 1;
+  margin: 0 10px 0 0;
+  border: 1px solid $black;
+  @extend %rounded-border;
+}
+
+.title {
+  flex: 1;
+  font-size: 22px;
+  font-weight: $font-weight-bold;
+  padding: 10px;
+  text-align: center;
+  background-color: $silver;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.titleWrapper {
+  display: flex;
+  background-color: $silver;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sort {
+  width: 160px;
+  align-self: center;
+  padding: 5px;
+}

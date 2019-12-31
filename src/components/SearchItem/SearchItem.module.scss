@@ -1,0 +1,113 @@
+@import '../../styles/base';
+
+.container {
+  display: flex;
+
+  &:nth-child(even) {
+    background-color: $white-smoke;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.item {
+  flex: 1;
+  flex-basis: 200px;
+  font-size: 18px;
+  padding: 10px;
+  user-select: none;
+  align-self: center;
+}
+
+.contact {
+  @extend %rounded-border;
+  align-items: center;
+  background-color: $sky-blue;
+  font-weight: $font-weight-bold;
+  border: 3px solid $black;
+  font-size: 18px;
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+  align-self: center;
+  justify-content: space-around;
+
+  &:hover {
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.files {
+  display: flex;
+}
+
+.file {
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.fileIcon {
+  font-size: 32px;
+  color: $dodger-blue;
+}
+
+.label {
+  font-weight: $font-weight-bold;
+  text-decoration: underline;
+  text-decoration-color: $silver;
+  padding: 0 0 5px;
+}
+
+.expand {
+  flex-flow: column;
+
+  .detailsWrapper {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 25%;
+  }
+}
+
+.toggleDetails {
+  font-size: 32px;
+  color: $dodger-blue;
+  padding: 0 10px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.detailsWrapper {
+  flex-basis: 150px;
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+
+.cert {
+  font-size: 12px;
+  color: $gray;
+}
+
+.certCheck {
+  color: $green;
+  font-weight: $font-weight-bold;
+  padding: 0 0 0 5px;
+}
