@@ -17,11 +17,13 @@ const TabItem = (props) => {
 
   return (
     <div className={classes.container}>
-      <FontAwesomeIcon
-        icon={['fas', icon]}
-        className={classes.icon}
-      />
-      <div className={classes.title}>{title}</div>
+      <div className={classes.title}>
+        <FontAwesomeIcon
+          icon={['fas', icon]}
+          className={classes.icon}
+        />
+        {title}
+      </div>
     </div>
   );
 };

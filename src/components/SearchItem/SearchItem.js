@@ -57,6 +57,7 @@ class SearchItem extends React.Component {
                         icon={['fas', 'file-pdf']}
                         className={classes.fileIcon}
                       />
+                      <div className={classes.fileDescription}>{i}</div>
                     </div>
                     )}
                   </div>

@@ -46,7 +46,7 @@ class Search extends React.Component {
           <div className={classes.titleWrapper}>
             <div className={classes.title}>Results ({data.length} {type}s)</div>
             <div className={classes.sort}>
-              <Select options={options} value={selectedOption} onChange={this.onSelectClick} />
+              <Select isSearchable={false} options={options} value={selectedOption} onChange={this.onSelectClick} />
             </div>
           </div>
           {data.length > 0 &&

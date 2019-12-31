@@ -30,6 +30,8 @@ class FilterList extends React.Component {
     return (
       <div className={classes.container}>
         <FilterItem title='Location' data={uniq(map(data, 'Location')).sort()} />
+        {/* <FilterItem title='Brand' data={uniq(map(data, 'Brand')).sort()} /> */}
+        <FilterItem title='Type' data={uniq(map(data, 'Type')).sort()} />
       </div>
     )
   }
