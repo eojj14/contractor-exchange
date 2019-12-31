@@ -1,6 +1,6 @@
 {
   "name": "contractor-exchange",
-  "homepage": ".",
+  "homepage": "http://eojj14.github.io/contractor-exchange",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.1.1",
     "include-media": "^1.4.9",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
@@ -26,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
