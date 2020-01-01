@@ -34,6 +34,35 @@ class Search extends React.Component {
       { value: 'location', label: 'Sort By Location' },
     ];
 
+    const customStyles = {
+      control: (base) => ({
+        ...base,
+        boxShadow: "none"
+      }),
+      menu: (base) => ({
+        ...base,
+        marginTop: '1px',
+      }),
+      menuList: (base) => ({
+        ...base,
+        border: '1px solid black',
+        padding: '0px',
+        borderTop: 'none',
+        borderBottomLeftRadius: '5px',
+        borderBottomRightRadius: '5px'
+      }),
+      option: (base) => ({
+        ...base,
+        fontWeight: '400',
+        fontSize: '18px'
+      }),
+      singleValue: (base) => ({
+        ...base,
+        fontWeight: '400',
+        fontSize: '18px'
+      }),
+    };
+
     if (!visible) return null;
 
     return (
@@ -46,7 +75,7 @@ class Search extends React.Component {
           <div className={classes.titleWrapper}>
             <div className={classes.title}>Results ({data.length} {type}s)</div>
             <div className={classes.sort}>
-              <Select isSearchable={false} options={options} value={selectedOption} onChange={this.onSelectClick} />
+              <Select styles={customStyles} isSearchable={false} options={options} value={selectedOption} onChange={this.onSelectClick} />
             </div>
           </div>
           {data.length > 0 &&

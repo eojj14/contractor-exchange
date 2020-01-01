@@ -36,8 +36,9 @@
 .contact {
   @extend %rounded-border;
   align-items: center;
-  background-color: $sky-blue;
-  font-weight: $font-weight-bold;
+  background-color: $dodger-blue;
+  font-weight: $font-weight-normal;
+  color: $white-smoke;
   border: 3px solid $black;
   font-size: 18px;
   display: flex;
@@ -89,14 +90,6 @@
   .contact {
     width: 25%;
   }
-}
-
-.toggleDetails {
-  font-size: 32px;
-  color: $dodger-blue;
-  padding: 0 10px;
-  cursor: pointer;
-  align-self: center;
 }
 
 .detailsWrapper {
