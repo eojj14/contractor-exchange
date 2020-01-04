@@ -12,8 +12,8 @@ const TabItem = (props) => {
 
   var icon = 'home';
 
-  if (title === 'Find Contractors') icon = 'hard-hat';
-  if (title === 'Find Jobs') icon = 'brush';
+  if (title === 'Contractors') icon = 'hard-hat';
+  if (title === 'Jobs') icon = 'brush';
 
   return (
     <div className={classes.container}>

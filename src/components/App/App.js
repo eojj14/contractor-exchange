@@ -11,13 +11,13 @@ function App() {
     <div className={classes.container}>
       <Banner title='The Contractor Exchange' subTitle='By Sherwin-Williams' />
       <TabList>
-        <TabItem title='Find Builders'>
+        <TabItem title='Builders'>
           <Search data={builders} type='Builder' />
         </TabItem>
-        <TabItem title='Find Contractors'>
+        <TabItem title='Contractors'>
           <Search data={contractors} type='Contractor' />
         </TabItem>
-        <TabItem title='Find Jobs'>
+        <TabItem title='Jobs'>
           <Search data={jobs} type='Job' />
         </TabItem>
       </TabList>

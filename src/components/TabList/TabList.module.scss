@@ -2,11 +2,22 @@
 
 .container {
   display: flex;
-  color: $white-smoke;
+  // background-image: linear-gradient(to bottom right, $silver, $gray);
+}
+
+.activeItem {
+  background-color: $silver;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &:hover {
+    cursor: default;
+    // background-color: $silver;
+  }
 }
 
 .item {
-  flex: 1 0 auto;
+  flex: 1;
   text-align: center;
   color: $black;
   font-size: 30px;
@@ -14,26 +25,22 @@
   padding: 10px;
   margin: 0;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $white-smoke;
+  &:not(.activeItem) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:not(.activeItem) + :not(.activeItem) {
+    border-left: 1px solid $silver;
   }
 
   &:first-child {
-    border-right: 1px solid $silver;
+    border-top-left-radius: 0;
   }
 
   &:last-child {
-    border-left: 1px solid $silver;
-  }
-}
-
-.activeItem {
-  background-color: $silver;
-
-  &:hover {
-    cursor: default;
-    background-color: $silver;
+    border-top-right-radius: 0;
   }
 }
 
