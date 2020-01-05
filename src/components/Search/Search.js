@@ -37,7 +37,9 @@ class Search extends React.Component {
     const customStyles = {
       control: (base) => ({
         ...base,
-        boxShadow: "none"
+        boxShadow: 'none',
+        borderTopLeftRadius: '10px',
+        borderTopRightRadius: '10px'
       }),
       menu: (base) => ({
         ...base,
@@ -48,8 +50,8 @@ class Search extends React.Component {
         border: '1px solid black',
         padding: '0px',
         borderTop: 'none',
-        borderBottomLeftRadius: '5px',
-        borderBottomRightRadius: '5px'
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px'
       }),
       option: (base) => ({
         ...base,
@@ -67,20 +69,27 @@ class Search extends React.Component {
 
     return (
       <div className={classes.container}>
-        <div className={classes.filters}>
-          <div className={classes.title}>Filters</div>
-          <FilterList data={data} />
-        </div>
-        <div className={classes.results}>
-          <div className={classes.titleWrapper}>
-            <div className={classes.title}>Results ({data.length} {type}s)</div>
-            <div className={classes.sort}>
-              <Select styles={customStyles} isSearchable={false} options={options} value={selectedOption} onChange={this.onSelectClick} />
-            </div>
+        <div className={classes.searchContainer}>
+          <div className={classes.filters}>
+            <div className={classes.title}>Filters</div>
+            <FilterList data={data} />
           </div>
-          {data.length > 0 &&
-            data.map((i, idx) => <SearchItem key={idx} data={i} type={type} />)
-          }
+          <div className={classes.results}>
+            <div className={classes.titleWrapper}>
+              <div className={classes.title}>Results ({data.length})</div>
+              <div className={classes.sort}>
+                <Select styles={customStyles} isSearchable={false} options={options} value={selectedOption} onChange={this.onSelectClick} />
+              </div>
+            </div>
+            {data.length > 0 &&
+              data.map((i, idx) => <SearchItem key={idx} data={i} type={type} />)
+            }
+          </div>
+        </div>
+        <div className={classes.links}>
+          <button className={classes.button}>Sign Up / Join</button>
+          <button className={classes.button}>Visit Sherwin-Williams</button>
+          <button className={classes.button}>Sherwin-Williams Pro App</button>
         </div>
       </div>
     )
