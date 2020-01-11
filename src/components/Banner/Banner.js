@@ -15,13 +15,13 @@ const Banner = (props) => {
     <div className={classes.container}>
       <div className={classes.title}>
           {title}
-          <div className={classes.login}>
+          <button className={classes.login}>
             <FontAwesomeIcon
               icon={['fas', 'sign-in-alt']}
               className={classes.loginIcon}
             />
             <div className={classes.loginText}>Login</div>
-          </div>
+          </button>
         </div>
       <div className={classes.subTitle}>{subTitle}</div>
     </div>

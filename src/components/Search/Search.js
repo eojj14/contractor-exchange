@@ -39,17 +39,24 @@ class Search extends React.Component {
         ...base,
         boxShadow: 'none',
         borderTopLeftRadius: '10px',
-        borderTopRightRadius: '10px'
+        borderTopRightRadius: '10px',
       }),
       menu: (base) => ({
         ...base,
         marginTop: '1px',
+        border: 'none',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px'
       }),
       menuList: (base) => ({
         ...base,
-        border: '1px solid black',
         padding: '0px',
-        borderTop: 'none',
+        border: 'none',
+        borderBottomLeftRadius: '10px',
+        borderBottomRightRadius: '10px'
+      }),
+      multiValueContainer: (base) => ({
+        ...base,
         borderBottomLeftRadius: '10px',
         borderBottomRightRadius: '10px'
       }),
