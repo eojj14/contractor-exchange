@@ -95,8 +95,8 @@ class Search extends React.Component {
         </div>
         <div className={classes.links}>
           <button className={classes.button}>Sign Up / Join</button>
-          <button className={classes.button}>Visit Sherwin-Williams</button>
-          <button className={classes.button}>Sherwin-Williams Pro App</button>
+          <button className={classes.button}>Visit Our Site</button>
+          <button className={classes.button}>Get Our App</button>
         </div>
       </div>
     )

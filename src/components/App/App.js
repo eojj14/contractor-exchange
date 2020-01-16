@@ -9,7 +9,7 @@ import { builders, contractors, jobs } from '../../data';
 function App() {
   return (
     <div className={classes.container}>
-      <Banner title='The Contractor Exchange' subTitle='By Sherwin-Williams' />
+      <Banner title='The Contractor Exchange' subTitle='By Joe Johnson' />
       <TabList>
         <TabItem title='Builders'>
           <Search data={builders} type='Builder' />

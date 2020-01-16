@@ -1,7 +1,7 @@
 const builders = [
   {
     Name: 'Joe Johnson',
-    Location: 'La Crosse, WI'
+    Location: 'Chicago, IL'
   },
   {
     Name: 'Phil Ponderosa',
@@ -26,10 +26,6 @@ const builders = [
 ];
 
 const contractors = [
-  {
-    Name: 'Josh Knoerr',
-    Location: 'Kalispell, MT',
-  },
   {
     Name: 'Ted Garlin',
     Location: 'Dallas, TX',
